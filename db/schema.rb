@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20140902073236) do
     t.string   "uid"
     t.string   "name"
     t.string   "picURL"
+    t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

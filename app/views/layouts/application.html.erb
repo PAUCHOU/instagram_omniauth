@@ -9,7 +9,6 @@
 <body>
 <div id="user_nav">
   <% if current_user %>
-  <%= current_user%>
 	<img src="<%= current_user.picURL%>" alt="">
     Welcome <%= current_user.name %>
 
@@ -17,9 +16,9 @@
  <%= link_to "Sign Out", signout_path %>
 
   <% else %>
-
-  <% end %>
   <%= link_to "Sign in with Instagram", "/auth/instagram"%>
+  <% end %>
+
 </div>
 
 <%= yield %>
